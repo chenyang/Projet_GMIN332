@@ -17,6 +17,7 @@ import com.hp.hpl.jena.rdf.model.Model;
 import de.fuberlin.wiwiss.d2rq.jena.ModelD2RQ;
 
 public class Program {
+	
 	private void requetteD2RQ(Model d2rqModel, int num){
 		String queryString = QueryStringFactory.createQueryString(num);
 		Query query = QueryFactory.create(queryString) ;
@@ -41,16 +42,20 @@ public class Program {
 		Program prog = new Program();
 
 		//Load TDB Model
-		Model tdbModel = MyReadTDBModel.getTDBModel();
-		System.out.println("nombre de triplets dans TDB: "+tdbModel.size());
+		MyReadTDBModel mytdb = new MyReadTDBModel();
+		Model tdbModel = mytdb.getTDBModel();
 		
 		//Load D2RQ Model
-		Model d2rqModel = MyReadD2RQModel.getD2RQModel();
+		MyReadD2RQModel myd2rq = new MyReadD2RQModel();
+		Model d2rqModel = myd2rq.getD2RQModel();
 		//System.out.println("nombre de triplets dans TDB: "+d2rqModel.size());
 		
 		//Load MongoDB Model
-		Model mongoModel = new MyReadMongoModel().getModelWithDatabaseData();
-		mongoModel.write(System.out, "RDF/XML-ABBREV");
+		MyReadMongoModel mymongo = new MyReadMongoModel();
+		Model mongoModel = mymongo.getModelWithDatabaseData();
+		mymongo.persistModel();
+		
+		//Load Neo4j
 		
 		//Combination des models
 		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel);
@@ -61,8 +66,7 @@ public class Program {
 		 */
 		
 		//Requette D2RQ
-		//prog.requetteD2RQ(modelAll, 1);
-		
+		prog.requetteD2RQ(modelAll, 1);
 		
 	}
 

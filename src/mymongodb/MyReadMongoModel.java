@@ -1,5 +1,7 @@
 package mymongodb;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
@@ -68,4 +70,17 @@ public class MyReadMongoModel {
 
 		return m;
 	}
+	
+	public void persistModel(){
+		Model m = this.getModelWithDatabaseData();
+		FileOutputStream ost;
+		try {
+			ost = new FileOutputStream("assets/outMongoEvent.rdf");
+			//m.write(System.out, "RDF/XML-ABBREV");
+			m.write(ost, "RDF/XML-ABBREV" ); 
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
 }
