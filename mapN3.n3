@@ -1,0 +1,51 @@
+@prefix map: <file:fm.n3#> .
+@prefix db: <> .
+@prefix v: <http://www.lirmm.fr/virus#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+
+map:database a d2rq:Database;
+	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
+	d2rq:jdbcDSN "jdbc:mysql://192.168.55.10:3306/cdcol";
+	d2rq:username "root";
+	d2rq:password "123";
+	.
+
+# Table Virus
+map:Virus a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "http://www.lirmm.fr/virus#@@VIRUS.ABREV@@";
+	d2rq:class v:Virus;
+	.
+map:nom a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Virus;
+	d2rq:property v:nom;
+	d2rq:column "VIRUS.ABREV";
+	d2rq:datatype xsd:string;
+	.
+
+map:nomfa a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Virus;
+	d2rq:property v:nomF;
+	d2rq:column "VIRUS.NOMFA";
+	d2rq:datatype xsd:string;
+	.
+
+# Table Transmission
+map:Transmission a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "http://www.lirmm.fr/virus#@@TRANSMISSION.MODET@@";
+	d2rq:class v:Transmission;
+	.
+	
+# n:m table Virus_Transmission
+map:Virus_Transmission a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:Virus;
+	d2rq:property v:Virus_Transmission;
+	d2rq:refersToClassMap map:Transmission;
+	d2rq:join "VIRUS_TRANSMISSION.ABREVV = VIRUS.ABREV";
+	d2rq:join "VIRUS_TRANSMISSION.MODET = TRANSMISSION.MODET";
+	.
+	

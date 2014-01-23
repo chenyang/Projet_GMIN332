@@ -1,0 +1,23 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:thesaurus="http://www.thesaurus.fr#"
+    xmlns:wd="http://www.wd.fr#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://www.thesaurus.fr#Terme"/>
+  <thesaurus:Descripteur rdf:about="http://www.thesaurus.fr#confiserie">
+    <thesaurus:Generalise>
+      <thesaurus:Descripteur rdf:about="http://www.thesaurus.fr#bonbon"/>
+    </thesaurus:Generalise>
+    <thesaurus:EmployePour>
+      <wd:NDescripteur rdf:about="http://www.thesaurus.fr#sucrerie"/>
+    </thesaurus:EmployePour>
+    <thesaurus:APrDefinition>aliment a base de sucre</thesaurus:APrDefinition>
+  </thesaurus:Descripteur>
+  <thesaurus:Descripteur rdf:about="http://www.thesaurus.fr#chocolat"/>
+  <rdf:Description rdf:about="http://www.thesaurus.fr#Descripteur">
+    <rdfs:subClassOf rdf:resource="http://www.thesaurus.fr#Terme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.wd.fr#NDescripteur">
+    <rdfs:subClassOf rdf:resource="http://www.thesaurus.fr#Terme"/>
+  </rdf:Description>
+</rdf:RDF>

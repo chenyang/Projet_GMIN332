@@ -1,0 +1,57 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:mgo="http://www.mymongo.fr#">
+  <mgo:country rdf:about="http://www.mymongo.fr#Singapour">
+    <mgo:belongsTo>
+      <mgo:continent rdf:about="http://www.mymongo.fr#Asie">
+        <mgo:nameOfContinent>Asie</mgo:nameOfContinent>
+      </mgo:continent>
+    </mgo:belongsTo>
+    <mgo:hasLang>
+      <mgo:language rdf:about="http://www.mymongo.fr#EN">
+        <mgo:nameOfLanguage>EN</mgo:nameOfLanguage>
+      </mgo:language>
+    </mgo:hasLang>
+    <mgo:nameOfCountry>Singapour</mgo:nameOfCountry>
+  </mgo:country>
+  <mgo:country rdf:about="http://www.mymongo.fr#Tunisie">
+    <mgo:belongsTo>
+      <mgo:continent rdf:about="http://www.mymongo.fr#Afrique">
+        <mgo:nameOfContinent>Afrique</mgo:nameOfContinent>
+      </mgo:continent>
+    </mgo:belongsTo>
+    <mgo:hasLang>
+      <mgo:language rdf:about="http://www.mymongo.fr#AR">
+        <mgo:nameOfLanguage>AR</mgo:nameOfLanguage>
+      </mgo:language>
+    </mgo:hasLang>
+    <mgo:nameOfCountry>Tunisie</mgo:nameOfCountry>
+  </mgo:country>
+  <mgo:country rdf:about="http://www.mymongo.fr#France">
+    <mgo:belongsTo>
+      <mgo:continent rdf:about="http://www.mymongo.fr#Europe">
+        <mgo:nameOfContinent>Europe</mgo:nameOfContinent>
+      </mgo:continent>
+    </mgo:belongsTo>
+    <mgo:hasLang>
+      <mgo:language rdf:about="http://www.mymongo.fr#FR">
+        <mgo:nameOfLanguage>FR</mgo:nameOfLanguage>
+      </mgo:language>
+    </mgo:hasLang>
+    <mgo:nameOfCountry>France</mgo:nameOfCountry>
+  </mgo:country>
+  <mgo:country rdf:about="http://www.mymongo.fr#Maroc">
+    <mgo:belongsTo rdf:resource="http://www.mymongo.fr#Afrique"/>
+    <mgo:hasLang rdf:resource="http://www.mymongo.fr#AR"/>
+    <mgo:nameOfCountry>Maroc</mgo:nameOfCountry>
+  </mgo:country>
+  <mgo:country rdf:about="http://www.mymongo.fr#Chine">
+    <mgo:belongsTo rdf:resource="http://www.mymongo.fr#Asie"/>
+    <mgo:hasLang>
+      <mgo:language rdf:about="http://www.mymongo.fr#CH">
+        <mgo:nameOfLanguage>CH</mgo:nameOfLanguage>
+      </mgo:language>
+    </mgo:hasLang>
+    <mgo:nameOfCountry>Chine</mgo:nameOfCountry>
+  </mgo:country>
+</rdf:RDF>
