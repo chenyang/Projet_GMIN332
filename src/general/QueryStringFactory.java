@@ -44,7 +44,7 @@ public class QueryStringFactory {
 			//by event id
 
 			result+=Outil.createPrefixe();
-			result+="SELECT ?nom_user ?commentaire "+NL+
+			result+="SELECT ?nom_user ?commentaire ?status ?event_id"+NL+
 					"WHERE"+NL+
 					"{"+NL+ 
 					"?user rdf:type findevent:user."+NL+
@@ -56,10 +56,10 @@ public class QueryStringFactory {
 					"?annotation findevent:annotation_comment ?commentaire."+NL+
 					"?event findevent:event_name ?event_name."+NL+
 					
-					//"?event_mongo rdf:type mgoevent:event."+NL+
-					//"?event_mongo mgoevent:ticketStatus ?status."+NL+
-					//"?event_mongo mgoevent:eventId ?event_id."+NL+
-					"FILTER(?event_name='7455669')"+NL+
+					"?event_mongo rdf:type mgoevent:event."+NL+
+					"?event_mongo mgoevent:ticketStatus ?status."+NL+
+					"?event_mongo mgoevent:eventId ?event_id."+NL+
+					"FILTER(?event_id=?event_name)"+NL+
 					"}";
 
 		}else{

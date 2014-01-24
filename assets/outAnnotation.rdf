@@ -19,7 +19,7 @@
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/findevent#2">
-    <findevent:event_name>7571731</findevent:event_name>
+    <findevent:event_name>7449434</findevent:event_name>
     <findevent:event_location>Paris</findevent:event_location>
     <rdfs:label>event #2</rdfs:label>
     <rdf:type rdf:resource="http://www.findevent.fr/findevent#event"/>
@@ -54,7 +54,7 @@
   <rdf:Description rdf:about="http://www.findevent.fr/findevent#1">
     <findevent:annotation_ref_user rdf:resource="http://www.findevent.fr/findevent#1"/>
     <findevent:annotation_ref_event rdf:resource="http://www.findevent.fr/findevent#1"/>
-    <findevent:event_name>7455669</findevent:event_name>
+    <findevent:event_name>7433536</findevent:event_name>
     <findevent:event_location>Paris</findevent:event_location>
     <rdfs:label>event #1</rdfs:label>
     <rdf:type rdf:resource="http://www.findevent.fr/findevent#event"/>
