@@ -1,6 +1,6 @@
 @prefix map: <file:fm.n3#> .
-@prefix db: <> .
-@prefix vocab: <http://www.findevent.fr/vocab#> .
+@prefix database: <> .
+@prefix findevent: <http://www.findevent.fr/findevent#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -19,8 +19,8 @@ map:database a d2rq:Database;
 # Table event
 map:event a d2rq:ClassMap;
 	d2rq:dataStorage map:database;
-	d2rq:uriPattern "http://www.findevent.fr/vocab#@@event.id@@";
-	d2rq:class vocab:event;
+	d2rq:uriPattern "http://www.findevent.fr/findevent#@@event.id@@";
+	d2rq:class findevent:event;
 	d2rq:classDefinitionLabel "event";
 	.
 	
@@ -33,14 +33,14 @@ map:event_label a d2rq:PropertyBridge;
 
 map:event_name a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:event;
-	d2rq:property vocab:event_name;
+	d2rq:property findevent:event_name;
 	d2rq:propertyDefinitionLabel "event name";
 	d2rq:column "event.name";
 	.
 
 map:event_location a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:event;
-	d2rq:property vocab:event_location;
+	d2rq:property findevent:event_location;
 	d2rq:propertyDefinitionLabel "event location";
 	d2rq:column "event.location";
 	.
@@ -48,8 +48,8 @@ map:event_location a d2rq:PropertyBridge;
 #Table user
 map:user a d2rq:ClassMap;
 	d2rq:dataStorage map:database;
-	d2rq:uriPattern "http://www.findevent.fr/vocab#@@user.id@@";
-	d2rq:class vocab:user;
+	d2rq:uriPattern "http://www.findevent.fr/findevent#@@user.id@@";
+	d2rq:class findevent:user;
 	d2rq:classDefinitionLabel "user";
 	.
 	
@@ -62,14 +62,14 @@ map:user_label a d2rq:PropertyBridge;
 
 map:user_name a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:user;
-	d2rq:property vocab:user_username;
+	d2rq:property findevent:user_username;
 	d2rq:propertyDefinitionLabel "user username";
 	d2rq:column "user.username";
 	.
 
 map:user_email a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:user;
-	d2rq:property vocab:user_email;
+	d2rq:property findevent:user_email;
 	d2rq:propertyDefinitionLabel "user email";
 	d2rq:column "user.email";
 	.
@@ -78,8 +78,8 @@ map:user_email a d2rq:PropertyBridge;
 #Table annotation
 map:annotation a d2rq:ClassMap;
 	d2rq:dataStorage map:database;
-	d2rq:uriPattern "http://www.findevent.fr/vocab#@@annotation.id@@";
-	d2rq:class vocab:annotation;
+	d2rq:uriPattern "http://www.findevent.fr/findevent#@@annotation.id@@";
+	d2rq:class findevent:annotation;
 	d2rq:classDefinitionLabel "annotation";
 	.
 	
@@ -92,21 +92,21 @@ map:annotation_label a d2rq:PropertyBridge;
 
 map:annotation_comment a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:annotation;
-	d2rq:property vocab:annotation_comment;
+	d2rq:property findevent:annotation_comment;
 	d2rq:propertyDefinitionLabel "annotation comment";
 	d2rq:column "annotation.comment";
 	.
 
 map:annotation_date a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:annotation;
-	d2rq:property vocab:annotation_date;
+	d2rq:property findevent:annotation_date;
 	d2rq:propertyDefinitionLabel "annotation date";
 	d2rq:column "annotation.date";
 	.
 
 map:annotation_ref_user a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:annotation;
-	d2rq:property vocab:annotation_ref_user;
+	d2rq:property findevent:annotation_ref_user;
 	d2rq:propertyDefinitionLabel "annotation ref user";
 	d2rq:refersToClassMap map:user;
 	d2rq:join "annotation.id_user=user.id";
@@ -114,7 +114,7 @@ map:annotation_ref_user a d2rq:PropertyBridge;
 
 map:annotation_ref_event a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:annotation;
-	d2rq:property vocab:annotation_ref_event;
+	d2rq:property findevent:annotation_ref_event;
 	d2rq:propertyDefinitionLabel "annotation ref event";
 	d2rq:refersToClassMap map:event;
 	d2rq:join "annotation.id_event=event.id";

@@ -23,22 +23,12 @@ public class QueryStringFactory {
 		}
 		return result;
 	}
-	
-	
+
+
 	//Pour D2RQ
 	public static String createQueryString(int num){
 		String result = "";
 		if(num==0){
-			result+=Outil.createPrefixe();
-			result+="SELECT  ?nom_com"+NL+
-					"WHERE"+NL+
-					"{"+NL+ 
-					"?reg rdf:type vocab:region."+NL+
-					"?com rdf:type vocab:cog_r."+NL+
-					"?com vocab:cog_r_codeReg ?reg."+NL+
-					"?reg vocab:region_ncc"+Outil.toMyString("LANGUEDOC-ROUSSILLON")+"."+NL+
-					"?com vocab:cog_r_ncc ?nom_com."+NL+
-					"}";
 		}
 		else if(num==1){
 			// Les noms des users dans la base
@@ -46,14 +36,37 @@ public class QueryStringFactory {
 			result+="SELECT  ?nom_user"+NL+
 					"WHERE"+NL+
 					"{"+NL+ 
-					"?user rdf:type vocab:user."+NL+
-					"?user vocab:user_username ?nom_user."+NL+
+					"?user rdf:type findevent:user."+NL+
+					"?user findevent:user_username ?nom_user."+NL+
 					"}";
-			
+
+		}else if(num==99){
+			//by event id
+
+			result+=Outil.createPrefixe();
+			result+="SELECT ?nom_user ?commentaire "+NL+
+					"WHERE"+NL+
+					"{"+NL+ 
+					"?user rdf:type findevent:user."+NL+
+					"?event rdf:type findevent:event."+NL+
+					"?annotation rdf:type findevent:annotation."+NL+
+					"?user findevent:user_username ?nom_user."+NL+
+					"?annotation findevent:annotation_ref_user ?user."+NL+
+					"?annotation findevent:annotation_ref_event ?event."+NL+
+					"?annotation findevent:annotation_comment ?commentaire."+NL+
+					"?event findevent:event_name ?event_name."+NL+
+					
+					//"?event_mongo rdf:type mgoevent:event."+NL+
+					//"?event_mongo mgoevent:ticketStatus ?status."+NL+
+					//"?event_mongo mgoevent:eventId ?event_id."+NL+
+					"FILTER(?event_name='7455669')"+NL+
+					"}";
+
 		}else{
 			System.out.println("Veuillez selectionner un bon numero");
 		}
 		return result;
 	}
+
 
 }

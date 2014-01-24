@@ -21,8 +21,16 @@ public class MyReadMongoModel {
 
 	public Model getModelWithDatabaseData(){
 
-		Model m = this.createEventModel();
-		String ns = m.getNsPrefixURI("mgoevent");
+		Model m = ModelFactory.createDefaultModel();
+		String ns = "http://www.findevent.fr#";
+		m.setNsPrefix("mgoevent", ns);
+
+		Resource Event = m.createResource(ns+"event");
+		Property property_eventId= m.createProperty(ns+"eventId");
+		Property property_ticketStatus = m.createProperty(ns+"ticketStatus");
+		Property property_datetime = m.createProperty(ns+"datetime");
+		Property property_city = m.createProperty(ns+"city");
+		Property property_participant = m.createProperty(ns+"participant");
 
 		//Alimentation with database data
 		try {
@@ -34,21 +42,22 @@ public class MyReadMongoModel {
 			while(cursor.hasNext()) {
 				BasicDBObject obj = (BasicDBObject) cursor.next();
 
-				String event_id = obj.getString("id");
-				String ticket_status = obj.getString("ticket_status");
-				String datetime = obj.getString("datetime");
-				BasicDBObject venue =(BasicDBObject) obj.get("venue");
-				String city = venue.getString("city");
-				BasicDBList artists = (BasicDBList) obj.get("artists");
-
-				Resource musicEvent = m.createResource(ns+event_id);
-				m.add(musicEvent, RDF.type, m.getResource(ns+"event"));
-				m.add(musicEvent, m.getProperty(ns+"ticketStatus"), ticket_status);
-				m.add(musicEvent, m.getProperty(ns+"datetime"), datetime);
-				m.add(musicEvent, m.getProperty(ns+"city"), city);
-				for(Object artist : artists){
+				String str_id = obj.getString("id");
+				String str_ticket_status = obj.getString("ticket_status");
+				String str_datetime = obj.getString("datetime");
+				BasicDBObject str_venue =(BasicDBObject) obj.get("venue");
+				String str_city = str_venue.getString("city");
+				BasicDBList str_artists = (BasicDBList) obj.get("artists");
+				
+				Resource musicEvent = m.createResource(ns+str_id);
+				m.add(musicEvent, RDF.type, Event);
+				m.add(musicEvent, property_eventId, str_id);
+				m.add(musicEvent, property_ticketStatus, str_ticket_status);
+				m.add(musicEvent, property_datetime, str_datetime);
+				m.add(musicEvent, property_city, str_city);
+				for(Object artist : str_artists){
 					BasicDBObject my = (BasicDBObject)artist;
-					m.add(musicEvent, m.getProperty(ns+"participant"), my.getString("name"));
+					m.add(musicEvent, property_participant, my.getString("name"));
 				}
 			}
 		}catch(Exception e){
@@ -57,20 +66,6 @@ public class MyReadMongoModel {
 		return m;
 	}
 
-	public Model createEventModel(){
-		Model m = ModelFactory.createDefaultModel();
-		String ns = "http://www.findevent.fr#";
-		m.setNsPrefix("mgoevent", ns);
-
-		Resource Event = m.createResource(ns+"event");
-		Property ticketStatus = m.createProperty(ns+"ticketStatus");
-		Property datetime = m.createProperty(ns+"datetime");
-		Property city = m.createProperty(ns+"city");
-		Property participant = m.createProperty(ns+"participant");
-
-		return m;
-	}
-	
 	public void persistModel(){
 		Model m = this.getModelWithDatabaseData();
 		FileOutputStream ost;
