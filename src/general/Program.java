@@ -60,32 +60,36 @@ public class Program {
 		//Load TDB Model
 		MyReadTDBModel mytdb = new MyReadTDBModel();
 		Model tdbModel = mytdb.getTDBModel();
-		mytdb.persitModel();
+		//mytdb.persitModel();
 		
 		
 		//Load D2RQ Model
 		MyReadD2RQModel myd2rq = new MyReadD2RQModel();
 		Model d2rqModel = myd2rq.getD2RQModel();
-		myd2rq.persistModel();
+		//myd2rq.persistModel();
 		
 		//Load MongoDB Model
 		MyReadMongoModel mymongo = new MyReadMongoModel();
 		Model mongoModel = mymongo.getModelWithDatabaseData();
-		mymongo.persistModel();
+		//mymongo.persistModel();
 		
 		//Load Neo4j
-		//MyReadNeoModel myneo = new MyReadNeoModel();
+		MyReadNeoModel myneo = new MyReadNeoModel();
 		//myneo.readDataArtiste();
+		myneo.createDB();
+		Model neomodel = myneo.getNeoModelWithData();
 		
 		//Combination des models
-		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel);
+		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel).union(neomodel);
+		
+		
 		
 		/**
 		 * Les Requettes
 		 */
 		
 		//Requette D2RQ
-		prog.executeRequette(modelAll, 99);
+		//prog.executeRequette(modelAll, 99);
 		//prog.persistModel(modelAll);
 
 		

@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="/home/cgao/Outil/jena/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/D2RQ"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Mongodb"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Neo4j"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

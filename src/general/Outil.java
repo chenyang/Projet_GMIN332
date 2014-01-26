@@ -12,6 +12,18 @@ public class Outil {
 	}
 
 
+	/***Parse last element***/
+	public static String getLastItemInLink(String link){
+		String result = "";
+		if(link.contains("@")){//To get xx@xx, eg:name of artist
+			result = link.substring(0, link.lastIndexOf("@"));
+		}else{//To get xx/xx/xx/xxx, eg:genre, instrument of artist, etc
+			result = link.substring(link.lastIndexOf("/")+1);
+		}
+		return result;
+	}
+
+
 	public static String createPrefixe(){
 
 		//D2RQ
@@ -63,7 +75,7 @@ public class Outil {
 
 				+prolog_prop+NL+prolog_dc+NL+prolog_dbpedia_owl+NL+prolog_mo+NL
 				+prolog_dce+NL+prolog_tags+NL+prolog_foaf+NL+prolog_event+NL
-				+prolog_db+NL+prolog_rel+NL+prolog_lingvoj+NL+prolog_db+NL+prolog_bio+NL+prolog_mbz
+				+prolog_db+NL+prolog_rel+NL+prolog_lingvoj+NL+prolog_db+NL+prolog_bio+NL+prolog_mbz+NL
 				;
 	}
 
