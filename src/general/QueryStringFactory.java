@@ -31,7 +31,12 @@ public class QueryStringFactory {
 					"}";
 
 		}else if (num==3){
-			
+			result+=Outil.createPrefixe();
+			result+="SELECT DISTINCT ?city_name"+NL+
+					"WHERE"+NL+
+					"{"+NL+ 
+					"?city mgoevent:city ?city_name."+NL+
+					"}";
 		}else if(num==99){
 			//Find events info and related annotation info
 			result+=Outil.createPrefixe();

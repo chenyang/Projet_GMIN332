@@ -1,13 +1,11 @@
 package general;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-
-import org.openjena.atlas.io.IndentedWriter;
-
 import myd2rq.MyReadD2RQModel;
 import mymongodb.MyReadMongoModel;
 import mytdb.MyReadTDBModel;
+
+import org.openjena.atlas.io.IndentedWriter;
+
 import Neo4j.MyReadNeoModel;
 
 import com.hp.hpl.jena.query.Query;
@@ -16,10 +14,9 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.query.ResultSetFormatter;
+import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-
-import de.fuberlin.wiwiss.d2rq.jena.ModelD2RQ;
 
 public class Program {
 	private void executeRequette(Model m, int num){
@@ -65,11 +62,11 @@ public class Program {
 		MyReadNeoModel myneo = new MyReadNeoModel();
 		//myneo.createDB();
 		Model neomodel = myneo.getNeoModelWithData();
-		Outil.persistModel(neomodel, "assets/outNeo.rdf");
+		//Outil.persistModel(neomodel, "assets/outNeo.rdf");
 		
 		//Combination des models
 		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel).union(neomodel);
-		
+		//InfModel im = ModelFactory.createRDFSModel(modelAll);
 		
 		
 		/**
@@ -77,7 +74,7 @@ public class Program {
 		 */
 		
 		//Requette D2RQ
-		prog.executeRequette(modelAll, 2);
+		prog.executeRequette(modelAll, 3);
 		//prog.executeRequette(modelAll, 99);
 		
 	}

@@ -53,7 +53,7 @@ public class Outil {
 		String prolog_geo = "PREFIX geo: <http://rdf.insee.fr/geo/>";
 
 		//Pour mongo
-		String prolog_mgoevent = "PREFIX mgoevent:<http://www.findevent.fr#>";
+		String prolog_mgoevent = "PREFIX mgoevent:<http://www.findevent.fr/mgoevent#>";
 
 		//Pour Neo4j
 		String prolog_prop = "PREFIX prop: <http://dbpedia.org/property/>";
@@ -69,7 +69,7 @@ public class Outil {
 		String prolog_db = "PREFIX db: <http://dbtune.org/musicbrainz/resource/>";
 		String prolog_bio = "PREFIX bio: <http://purl.org/vocab/bio/0.1/>";
 		String prolog_mbz = "PREFIX mbz: <http://purl.org/ontology/mbz#>";
-		String prolog_neoartist = "PREFIX neoartist:<http://www.findevent.fr#>";
+		String prolog_neoartist = "PREFIX neoartist:<http://www.findevent.fr/neoartist#>";
 
 		return  prolog_vocab+NL+prolog_rdf+NL+prolog_database+NL+prolog_rdfs+NL
 				+prolog_owl+NL+prolog_map+NL+prolog_xsd+NL

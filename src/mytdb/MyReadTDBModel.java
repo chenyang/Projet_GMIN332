@@ -17,7 +17,6 @@ public class MyReadTDBModel {
 		// Direct way: Make a TDB-back Jena model in the named directory.
 		String directory = "databases/MyTDB_Base" ;
 		ds = TDBFactory.createDataset(directory) ;
-		//Model model = ds.getNamedModel( "geo+region" ); 
 		Model model = ds.getDefaultModel();
 		FileManager.get().readModel( model, rdf_file_1 );
 		FileManager.get().readModel( model, rdf_file_2 );

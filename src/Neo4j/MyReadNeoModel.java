@@ -30,7 +30,7 @@ public class MyReadNeoModel {
 	public Model getNeoModelWithData(){
 		NeoDBManagement neomgt = new NeoDBManagement();
 		Model m = ModelFactory.createDefaultModel();	
-		String ns = "http://www.findevent.fr#";
+		String ns = "http://www.findevent.fr/neoartist#";
 		m.setNsPrefix("neoartist", ns);
 		Resource Artist = m.createResource(ns+"artist");
 		Property property_name= m.createProperty(ns+"name");
@@ -48,7 +48,7 @@ public class MyReadNeoModel {
 				String name_underscore = (n.getProperty("name").toString()).replace(" ", "_");
 				Resource artist = m.createResource(ns+name_underscore);
 				m.add(artist, RDF.type, Artist);
-				m.add(artist, property_name, name_underscore);
+				m.add(artist, property_name, n.getProperty("name").toString());
 				m.add(artist, property_genre, n.getProperty("genre").toString());
 				m.add(artist, property_instrument, n.getProperty("instrument").toString());
 				
@@ -56,10 +56,8 @@ public class MyReadNeoModel {
 					//For all outgoing relationships
 					for(Relationship rel:n.getRelationships(Direction.OUTGOING)){
 						//System.out.println("OUTGOING:"+n.getProperty("name")+" knows: "+rel.getEndNode().getProperty("name").toString()+"/ "+ rel.getProperty("knows-weight"));
-						
 						name_underscore = (rel.getEndNode().getProperty("name").toString()).replace(" ", "_");
-						Resource anotherArtist = m.createResource(ns+name_underscore);
-						m.add(anotherArtist, RDF.type, Artist);
+                        Resource anotherArtist = m.createResource(ns+name_underscore);
 						
 						//property_knows.addProperty(property_knows_weight, rel.getProperty("knows-weight").toString());
 						m.add(artist, property_knows, anotherArtist);

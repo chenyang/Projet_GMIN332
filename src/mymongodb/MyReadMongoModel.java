@@ -22,7 +22,7 @@ public class MyReadMongoModel {
 	public Model getModelWithDatabaseData(){
 
 		Model m = ModelFactory.createDefaultModel();
-		String ns = "http://www.findevent.fr#";
+		String ns = "http://www.findevent.fr/mgoevent#";
 		m.setNsPrefix("mgoevent", ns);
 
 		Resource Event = m.createResource(ns+"event");
