@@ -15,7 +15,7 @@ public class MyReadTDBModel {
 	public Model getTDBModel()
 	{
 		// Direct way: Make a TDB-back Jena model in the named directory.
-		String directory = "/home/cgao/Travail/Projet_GMIN332/MyTDB_Base" ;
+		String directory = "databases/MyTDB_Base" ;
 		ds = TDBFactory.createDataset(directory) ;
 		//Model model = ds.getNamedModel( "geo+region" ); 
 		Model model = ds.getDefaultModel();
@@ -24,15 +24,4 @@ public class MyReadTDBModel {
 		return model;
 	}
 	
-	public void persitModel(){
-		Model m = this.getTDBModel();
-		FileOutputStream ost;
-		try {
-			ost = new FileOutputStream("assets/outTDB.rdf");
-			//m.write(System.out, "RDF/XML-ABBREV");
-			m.write(ost, "RDF/XML-ABBREV" ); 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
 }

@@ -22,16 +22,15 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import de.fuberlin.wiwiss.d2rq.jena.ModelD2RQ;
 
 public class Program {
-	
 	private void executeRequette(Model m, int num){
 		String queryString = QueryStringFactory.createQueryString(num);
 		Query query = QueryFactory.create(queryString) ;
-		// afficher la requete
+		//Show requette
 		query.serialize(new IndentedWriter(System.out,true)) ;
 		System.out.println() ;
 		QueryExecution qexec = QueryExecutionFactory.create(query, m) ;
-		System.out.println("Les elements du modele : ") ;
-		System.out.println("Vueillez patientez..");
+		System.out.println("Elements of the model.. ") ;
+		System.out.println("Please be patient..");
 		try {
 			ResultSet rs = qexec.execSelect() ;
 			ResultSetFormatter.out(System.out, rs, query);
@@ -42,17 +41,6 @@ public class Program {
 		}
 	}
 	
-	public void persistModel(Model m){
-		FileOutputStream ost;
-		try {
-			ost = new FileOutputStream("assets/ALL.rdf");
-			//m.write(System.out, "RDF/XML-ABBREV");
-			m.write(ost, "RDF/XML-ABBREV" ); 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
-	
 	
 	public static void main(String[] args) {
 		Program prog = new Program();
@@ -60,24 +48,24 @@ public class Program {
 		//Load TDB Model
 		MyReadTDBModel mytdb = new MyReadTDBModel();
 		Model tdbModel = mytdb.getTDBModel();
-		//mytdb.persitModel();
+		//Outil.persistModel(tdbModel, "assets/outTDB.rdf");
 		
 		
 		//Load D2RQ Model
 		MyReadD2RQModel myd2rq = new MyReadD2RQModel();
 		Model d2rqModel = myd2rq.getD2RQModel();
-		//myd2rq.persistModel();
+		//Outil.persistModel(d2rqModel, "assets/outAnnotation.rdf");
 		
 		//Load MongoDB Model
 		MyReadMongoModel mymongo = new MyReadMongoModel();
 		Model mongoModel = mymongo.getModelWithDatabaseData();
-		//mymongo.persistModel();
+		//Outil.persistModel(mongoModel, "assets/outMongoEvent.rdf");
 		
 		//Load Neo4j
 		MyReadNeoModel myneo = new MyReadNeoModel();
-		//myneo.readDataArtiste();
-		myneo.createDB();
+		//myneo.createDB();
 		Model neomodel = myneo.getNeoModelWithData();
+		Outil.persistModel(neomodel, "assets/outNeo.rdf");
 		
 		//Combination des models
 		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel).union(neomodel);
@@ -89,9 +77,8 @@ public class Program {
 		 */
 		
 		//Requette D2RQ
+		prog.executeRequette(modelAll, 2);
 		//prog.executeRequette(modelAll, 99);
-		//prog.persistModel(modelAll);
-
 		
 	}
 

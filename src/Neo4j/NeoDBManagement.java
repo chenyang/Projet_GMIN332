@@ -14,13 +14,13 @@ import org.neo4j.kernel.impl.core.NodeManager;
 public class NeoDBManagement {
 
 	//Neo4j db path
-	private static final String Neo4j_PATH = "/home/cgao/SERVERS/neo4j-community-2.0.0/data/graph.db";
+	private static final String Neo4j_PATH = "databases/graph.db";
 
-	GraphDatabaseService graphDatabaseService = new GraphDatabaseFactory().newEmbeddedDatabase(Neo4j_PATH);
-	ArrayList<Relationship> listOfRelations = new ArrayList<Relationship>();
-	ArrayList<Node> listOfArtistNode = new ArrayList<Node>();
-	Node node_maxime, node_florian, node_didier, node_vioda;
-	ArrayList<Node> listOfWifes = new ArrayList<Node>();
+	private GraphDatabaseService graphDatabaseService = new GraphDatabaseFactory().newEmbeddedDatabase(Neo4j_PATH);
+	private ArrayList<Relationship> listOfRelations = new ArrayList<Relationship>();
+	private ArrayList<Node> listOfArtistNode = new ArrayList<Node>();
+	private Node node_maxime, node_florian, node_didier, node_vioda;
+	private ArrayList<Node> listOfWifes = new ArrayList<Node>();
 
 	//list of relationships
 	private static enum RelTypes implements RelationshipType{
@@ -28,35 +28,16 @@ public class NeoDBManagement {
 		MARRYTO
 	}
 
-	void showAllNodes(){
-
-		Transaction transaction = graphDatabaseService.beginTx();
-		try{
-			for(Node n : graphDatabaseService.getAllNodes()){
-				if(n.hasRelationship()){
-					System.out.println(n.getProperty("name"));
-					
-					//Pour les outgoing
-					for(Relationship rel:n.getRelationships(Direction.OUTGOING)){
-						if(rel.isType(RelTypes.KNOWS)){
-							System.out.println("out "+rel.getEndNode().getProperty("name").toString()+", "+ rel.getProperty("knows-weight"));
-						}
-					}				
-					
-				}
-			}
-			transaction.success();
-		}finally{
-
-		}
+	GraphDatabaseService getGraphDatabaseService(){
+		return graphDatabaseService;
 	}
 	
-	
+
 	@SuppressWarnings("deprecation")
 	void createDatabase(ArrayList<Artist> listOfArtists){
 
-		System.out.println(listOfArtists.size());
-
+		//System.out.println(listOfArtists.size());
+		
 		//Begin Transaction
 		Transaction transaction = graphDatabaseService.beginTx();
 		try{

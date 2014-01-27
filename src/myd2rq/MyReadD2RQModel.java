@@ -13,16 +13,4 @@ public class MyReadD2RQModel {
 		//Model d2rqModel = new ModelD2RQ("file:mapping_gdc.n3");
 		return d2rqModel;
 	}
-	
-	public void persistModel(){
-		Model m = this.getD2RQModel();
-		FileOutputStream ost;
-		try {
-			ost = new FileOutputStream("assets/outAnnotation.rdf");
-			//m.write(System.out, "RDF/XML-ABBREV");
-			m.write(ost, "RDF/XML-ABBREV" ); 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
 }

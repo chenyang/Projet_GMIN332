@@ -3,6 +3,13 @@ package Neo4j;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
+import org.neo4j.graphdb.Direction;
+import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.graphdb.Node;
+import org.neo4j.graphdb.Relationship;
+import org.neo4j.graphdb.Transaction;
+import org.neo4j.graphdb.factory.GraphDatabaseFactory;
+
 import general.Outil;
 
 import com.hp.hpl.jena.query.QueryExecution;
@@ -13,25 +20,61 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
+import com.hp.hpl.jena.vocabulary.RDF;
 
 public class MyReadNeoModel {
-	
+
 	PrintWriter wr_nettoye;
 	ArrayList<Artist> listOfArtist;
-	
+
 	public Model getNeoModelWithData(){
+		NeoDBManagement neomgt = new NeoDBManagement();
 		Model m = ModelFactory.createDefaultModel();	
 		String ns = "http://www.findevent.fr#";
 		m.setNsPrefix("neoartist", ns);
 		Resource Artist = m.createResource(ns+"artist");
 		Property property_name= m.createProperty(ns+"name");
 		Property property_instrument = m.createProperty(ns+"instrument");
-		Property property_birthday = m.createProperty(ns+"birthday");
 		Property property_genre = m.createProperty(ns+"genre");
 		Property property_knows = m.createProperty(ns+"knows");
+		Property property_knows_weight = m.createProperty(ns+"knows_weight");
+
+
+		GraphDatabaseService graphDatabaseService = neomgt.getGraphDatabaseService();
+		Transaction transaction = graphDatabaseService.beginTx();
+		try{
+			for(Node n : graphDatabaseService.getAllNodes()){
+				//System.out.println(n.getProperty("name")+", "+n.getProperty("genre")+", "+n.getProperty("instrument"));
+				String name_underscore = (n.getProperty("name").toString()).replace(" ", "_");
+				Resource artist = m.createResource(ns+name_underscore);
+				m.add(artist, RDF.type, Artist);
+				m.add(artist, property_name, name_underscore);
+				m.add(artist, property_genre, n.getProperty("genre").toString());
+				m.add(artist, property_instrument, n.getProperty("instrument").toString());
+				
+				if(n.hasRelationship()){
+					//For all outgoing relationships
+					for(Relationship rel:n.getRelationships(Direction.OUTGOING)){
+						//System.out.println("OUTGOING:"+n.getProperty("name")+" knows: "+rel.getEndNode().getProperty("name").toString()+"/ "+ rel.getProperty("knows-weight"));
+						
+						name_underscore = (rel.getEndNode().getProperty("name").toString()).replace(" ", "_");
+						Resource anotherArtist = m.createResource(ns+name_underscore);
+						m.add(anotherArtist, RDF.type, Artist);
+						
+						//property_knows.addProperty(property_knows_weight, rel.getProperty("knows-weight").toString());
+						m.add(artist, property_knows, anotherArtist);
+						//m.add(anotherArtist, property_knows_weight, rel.getProperty("knows-weight").toString());
+					}				
+				}
+			}
+			transaction.success();
+		}finally{
+			transaction.finish();
+			neomgt.shutdown();
+		}
 		return m;
 	}
-	
+
 	//This method is used to load data from dbpedia
 	@SuppressWarnings("finally")
 	public ArrayList<Artist> readDataArtiste(){
@@ -43,7 +86,7 @@ public class MyReadNeoModel {
 		final String NL = System.getProperty("line.separator") ;
 		final String service_dbpedia = "http://www.dbpedia.org/sparql";
 		QueryExecution qexec;
-		
+
 		sQueries="";
 		sQueries+=prefixe;
 		sSelect="SELECT DISTINCT * ";
@@ -55,7 +98,6 @@ public class MyReadNeoModel {
 		sWhere=sWhere + "?artiste dbpedia-owl:genre ?genre."; 
 		sWhere=sWhere + "?artiste dbpedia-owl:instrument ?instrument.";
 		sQueries = sQueries+ "WHERE { "+sWhere+" } ";
-		System.out.println(sQueries);
 		qexec = QueryExecutionFactory.sparqlService(service_dbpedia, sQueries);
 		try {
 			wr_nettoye = new PrintWriter("assets/info_artistes_dbpedia.txt", "UTF-8");
@@ -68,30 +110,30 @@ public class MyReadNeoModel {
 				artist.setInstrument(Outil.getLastItemInLink(soln.get("?instrument").toString()));
 				artist.setName(Outil.getLastItemInLink(soln.get("?name").toString()));
 				listOfArtist.add(artist);
-				
+
 				//Persist data to txt file
 				wr_nettoye.println(Outil.getLastItemInLink(soln.get("?name").toString())+", "
-				+Outil.getLastItemInLink(soln.get("?genre").toString())
-				+", "+Outil.getLastItemInLink(soln.get("?instrument").toString())
-				);
+						+Outil.getLastItemInLink(soln.get("?genre").toString())
+						+", "+Outil.getLastItemInLink(soln.get("?instrument").toString())
+						);
 			}
-			
+
 			//Manually add some artists
 			Artist a1 = new Artist();
 			a1.setGenre("Acid_rock");
 			a1.setInstrument("Piano");
 			a1.setName("Maxime Jullia");
-			
+
 			Artist a2 = new Artist();
 			a2.setGenre("Acid_house");
 			a2.setInstrument("Bass_guitar");
 			a2.setName("Vioda");
-			
+
 			Artist a3 = new Artist();
 			a3.setGenre("Acid_house");
 			a3.setInstrument("Synthesizer");
 			a3.setName("Florian Gauthier");
-			
+
 			Artist a4 = new Artist();
 			a4.setGenre("Beat_music");
 			a4.setInstrument("Guitar");
@@ -101,7 +143,7 @@ public class MyReadNeoModel {
 			listOfArtist.add(a2);
 			listOfArtist.add(a3);
 			listOfArtist.add(a4);
-			
+
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{
@@ -109,19 +151,18 @@ public class MyReadNeoModel {
 			return listOfArtist;
 		}
 	}
-	
+
 	//Create and insert data into Neo4j database
 	public void createDB(){
 		NeoDBManagement neomgt = new NeoDBManagement();
 		try{
 			//neomgt.createDatabase(this.readDataArtiste());
-			neomgt.showAllNodes();
 			//neomgt.removeData();
 			neomgt.shutdown();
-			
+
 		}catch(Exception e){
 			e.printStackTrace();
 		}
 	}
-	
+
 }

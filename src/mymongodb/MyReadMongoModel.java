@@ -65,17 +65,5 @@ public class MyReadMongoModel {
 		}
 		return m;
 	}
-
-	public void persistModel(){
-		Model m = this.getModelWithDatabaseData();
-		FileOutputStream ost;
-		try {
-			ost = new FileOutputStream("assets/outMongoEvent.rdf");
-			//m.write(System.out, "RDF/XML-ABBREV");
-			m.write(ost, "RDF/XML-ABBREV" ); 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
 	
 }
