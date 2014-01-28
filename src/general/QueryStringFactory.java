@@ -10,7 +10,7 @@ public class QueryStringFactory {
 		if(num==0){
 
 		}else if(num==1){
-			//user qui ont annote un evenement avec datetime inferieur 2014-01-24, city
+			//user qui ont annote un evenement avec datetime inferieur 2014-01-28, city, status ,nom_user, commentaire
 			result+=Outil.createPrefixe();
 			result+="SELECT DISTINCT ?event_name ?city ?status ?nom_user ?commentaire"+NL+
 					"WHERE"+NL+
@@ -29,7 +29,6 @@ public class QueryStringFactory {
 					"?event mgoevent:ticketStatus ?status."+NL+
 					"?event mgoevent:datetime ?datetime."+NL+
 					"FILTER(?datetime<='2014-01-28')"+NL+
-					
 					
 					"}";
 
@@ -153,6 +152,7 @@ public class QueryStringFactory {
 			result+="SELECT DISTINCT ?city_name ?event_id"+NL+
 					"WHERE"+NL+
 					"{"+NL+ 
+					"?event rdf:type mgoevent:event."+NL+
 					"?event mgoevent:city ?city_name."+NL+
 					"?event mgoevent:eventId ?event_id."+NL+
 					//"FILTER(?city_name='Paris')"+NL+

@@ -47,6 +47,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7471705">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7471705</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -72,6 +73,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7486745">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7486745</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T21:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -85,6 +87,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7458523">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7458523</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -103,6 +106,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7448013">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7448013</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -142,6 +146,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7497767">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7497767</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T22:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -149,6 +154,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7449208">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7449208</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -211,6 +217,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6720546">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6720546</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T19:00:00</j.3:datetime>
     <j.3:city>Ollioules</j.3:city>
@@ -218,6 +225,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7522922">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7522922</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-02-02T17:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -232,6 +240,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7448065">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7448065</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-29T21:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -240,6 +249,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7462104">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7462104</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Vincennes</j.3:city>
@@ -251,6 +261,12 @@
     <j.1:nom xml:lang="fr">Aubusson</j.1:nom>
     <j.1:nom>Aubusson</j.1:nom>
     <j.1:code_arrondissement>231</j.1:code_arrondissement>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_044">
+    <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
+    <j.1:nom xml:lang="fr">Forcalquier</j.1:nom>
+    <j.1:nom>Forcalquier</j.1:nom>
+    <j.1:code_arrondissement>044</j.1:code_arrondissement>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/neoartist#instrument">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -268,20 +284,14 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_044">
-    <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
-    <j.1:nom xml:lang="fr">Forcalquier</j.1:nom>
-    <j.1:nom>Forcalquier</j.1:nom>
-    <j.1:code_arrondissement>044</j.1:code_arrondissement>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_52121">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -291,8 +301,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/nom">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/nom"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/nom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_722">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -322,6 +332,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7522921">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7522921</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T21:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -338,6 +349,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6868593">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6868593</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Saint Etienne</j.3:city>
@@ -350,6 +362,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7383385">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7383385</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -372,6 +385,7 @@
     <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7433536"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7433536</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -399,6 +413,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7569431">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7569431</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Villeurbanne</j.3:city>
@@ -406,6 +421,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7142033">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7142033</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:30:00</j.3:datetime>
     <j.3:city>Launaguet</j.3:city>
@@ -418,6 +434,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7448717">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7448717</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:30:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -447,6 +464,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7384686">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7384686</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -461,6 +479,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6787029">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6787029</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -468,6 +487,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7458530">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7458530</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -499,6 +519,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7456567">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7456567</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -506,6 +527,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7094653">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7094653</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -537,9 +559,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#oneOf">
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#oneOf"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
@@ -594,6 +616,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6873128">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6873128</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Clichy</j.3:city>
@@ -616,6 +639,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7494401">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7494401</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-03T19:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -647,6 +671,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7508105">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7508105</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -702,6 +727,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7486740">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7486740</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -715,6 +741,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7383380">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7383380</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-26T18:30:00</j.3:datetime>
     <j.3:city>Six Fours</j.3:city>
@@ -772,6 +799,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7586866">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7586866</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -802,6 +830,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7305911">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7305911</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T21:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -815,6 +844,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7472371">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7472371</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T21:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -839,8 +869,8 @@
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#annotation_ref_user">
     <rdfs:label>annotation ref user</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#annotation_ref_user"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#annotation_ref_user"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -856,6 +886,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7180591">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7180591</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T21:30:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -934,17 +965,18 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6440167">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6440167</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-26T20:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -977,6 +1009,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7380155">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7380155</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -984,6 +1017,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7595050">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7595050</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T19:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -997,6 +1031,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6934348">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6934348</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:30:00</j.3:datetime>
     <j.3:city>Berre L Etang</j.3:city>
@@ -1036,6 +1071,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7527172">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7527172</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T19:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1049,6 +1085,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7533452">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7533452</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -1068,6 +1105,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7586485">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7586485</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -1093,6 +1131,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7436389">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7436389</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -1100,6 +1139,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7188712">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7188712</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T19:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1107,8 +1147,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_891">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -1175,6 +1215,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -1182,10 +1223,10 @@
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7496407">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7496407</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T23:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -1193,8 +1234,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/code_commune">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/code_commune"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/code_commune"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_043">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -1256,6 +1297,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7448060">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7448060</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-28T20:30:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1320,6 +1362,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7393378">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7393378</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -1334,6 +1377,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7517393">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7517393</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -1353,8 +1397,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#ticketStatus">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/mgoevent#ticketStatus"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/mgoevent#ticketStatus"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_15">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Departement"/>
@@ -1368,6 +1412,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6720543">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6720543</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T19:00:00</j.3:datetime>
     <j.3:city>Ollioules</j.3:city>
@@ -1385,6 +1430,7 @@
     <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#6815491"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#6815491"/>
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6815491</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1424,6 +1470,7 @@
     <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7176755"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7176755"/>
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7176755</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:30:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -1470,10 +1517,10 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -1487,6 +1534,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6614645">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6614645</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T19:00:00</j.3:datetime>
     <j.3:city>BruguiÈres</j.3:city>
@@ -1566,6 +1614,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6715978">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6715978</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-29T20:00:00</j.3:datetime>
     <j.3:city>Sanary</j.3:city>
@@ -1573,8 +1622,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/neoartist#marries">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/neoartist#marries"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_511">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -1586,10 +1635,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/d2rqevent#6815491"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/mgoevent#6815491"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/mgoevent#6815491"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/d2rqevent#6815491"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#6815491"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#6815491"/>
@@ -1600,6 +1649,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6815491</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1613,6 +1663,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6797236">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6797236</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T21:00:00</j.3:datetime>
     <j.3:city>Istres</j.3:city>
@@ -1642,6 +1693,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7426074">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7426074</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -1657,6 +1709,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6625262">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6625262</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -1664,6 +1717,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7580534">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7580534</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -1688,17 +1742,18 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7176757">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7176757</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:30:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -1742,6 +1797,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7574459">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7574459</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T19:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1758,6 +1814,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7579968">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7579968</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T22:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1765,6 +1822,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6625265">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6625265</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:30:00</j.3:datetime>
     <j.3:city>Saint-Étienne</j.3:city>
@@ -1784,11 +1842,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7514817">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7514817</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -1826,6 +1885,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7176756">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7176756</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T19:30:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -1835,8 +1895,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/neoartist#nationality">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/neoartist#nationality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_63">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Departement"/>
@@ -1864,6 +1924,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7589643">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7589643</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T18:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1929,6 +1990,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7551047">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7551047</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T11:00:00</j.3:datetime>
     <j.3:city>La Seyne-Sur-Mer</j.3:city>
@@ -1941,13 +2003,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_80">
@@ -1963,6 +2025,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7340040">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7340040</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-29T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -1987,6 +2050,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7376671">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7376671</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -1994,6 +2058,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7094635">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7094635</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -2025,6 +2090,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7573434">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7573434</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -2047,6 +2113,11 @@
     <j.1:nom xml:lang="fr">Clermont-Ferrand</j.1:nom>
     <j.1:nom>Clermont-Ferrand</j.1:nom>
     <j.1:code_arrondissement>632</j.1:code_arrondissement>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#eventId">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/mgoevent#eventId"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_61">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Departement"/>
@@ -2084,6 +2155,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7125937">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7125937</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>St Etienne</j.3:city>
@@ -2102,27 +2174,27 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_44109">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -2142,6 +2214,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7094636">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7094636</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -2166,8 +2239,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_673">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -2177,6 +2250,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7348188">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7348188</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:00:00</j.3:datetime>
     <j.3:city>La Salvetat-Saint-Gilles</j.3:city>
@@ -2207,6 +2281,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7587261">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7587261</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -2232,6 +2307,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7571271">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7571271</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T20:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -2248,6 +2324,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7582249">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7582249</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -2255,6 +2332,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7564338">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7564338</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Chatenay Malabry</j.3:city>
@@ -2275,6 +2353,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7281939">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7281939</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -2334,11 +2413,12 @@
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#annotation_date">
     <rdfs:label>annotation date</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#annotation_date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7579915">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7579915</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T23:00:00</j.3:datetime>
     <j.3:city>Ramonville-Saint-Agne</j.3:city>
@@ -2347,6 +2427,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7556743">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7556743</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-02T14:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -2354,6 +2435,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7367270">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7367270</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T21:00:00</j.3:datetime>
     <j.3:city>Montauban</j.3:city>
@@ -2374,6 +2456,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7471754">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7471754</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -2387,10 +2470,19 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7527343">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7527343</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
     <j.3:participant>Lilly Wood &amp; The Prick</j.3:participant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7566230">
+    <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7566230</j.3:eventId>
+    <j.3:ticketStatus>unavailable</j.3:ticketStatus>
+    <j.3:datetime>2014-01-29T14:30:00</j.3:datetime>
+    <j.3:city>Toulouse</j.3:city>
+    <j.3:participant>The Noise</j.3:participant>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_84007">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -2398,15 +2490,9 @@
     <j.1:nom>Avignon</j.1:nom>
     <j.1:code_commune>84007</j.1:code_commune>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7566230">
-    <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
-    <j.3:ticketStatus>unavailable</j.3:ticketStatus>
-    <j.3:datetime>2014-01-29T14:30:00</j.3:datetime>
-    <j.3:city>Toulouse</j.3:city>
-    <j.3:participant>The Noise</j.3:participant>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7545440">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7545440</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T23:00:00</j.3:datetime>
     <j.3:city>Ramonville-Saint-Agne</j.3:city>
@@ -2420,6 +2506,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7491612">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7491612</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -2455,6 +2542,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7559479">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7559479</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T20:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -2470,8 +2558,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_742">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -2505,6 +2593,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7028734">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7028734</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T19:00:00</j.3:datetime>
     <j.3:city>Cugnaux</j.3:city>
@@ -2512,6 +2601,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7504419">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7504419</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -2540,13 +2630,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_04070">
@@ -2557,6 +2647,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7589411">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7589411</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T19:45:00</j.3:datetime>
     <j.3:city>Blagnac</j.3:city>
@@ -2574,6 +2665,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7391274">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7391274</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -2587,6 +2679,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7488242">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7488242</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -2600,6 +2693,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7477667">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7477667</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Saint-Cloud</j.3:city>
@@ -2608,8 +2702,8 @@
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#event_location">
     <rdfs:label>event location</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#event_location"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#event_location"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_741">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -2631,12 +2725,12 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
   </rdf:Description>
@@ -2653,15 +2747,16 @@
     <j.1:code_arrondissement>252</j.1:code_arrondissement>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7391271">
-    <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
-    <j.3:ticketStatus>available</j.3:ticketStatus>
-    <j.3:datetime>2014-01-23T21:00:00</j.3:datetime>
-    <j.3:city>Les Lilas</j.3:city>
-    <j.3:participant>Médéric Collignon</j.3:participant>
-    <j.3:participant>Philippe Gleizes</j.3:participant>
-    <j.3:participant>Emmanuel Harang</j.3:participant>
+    <j.3:eventId>7391271</j.3:eventId>
     <j.3:participant>Géraldine Laurent</j.3:participant>
     <j.3:participant>Christophe Monniot</j.3:participant>
+    <j.3:participant>Philippe Gleizes</j.3:participant>
+    <j.3:participant>Médéric Collignon</j.3:participant>
+    <j.3:ticketStatus>available</j.3:ticketStatus>
+    <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:city>Les Lilas</j.3:city>
+    <j.3:datetime>2014-01-23T21:00:00</j.3:datetime>
+    <j.3:participant>Emmanuel Harang</j.3:participant>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_44">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Departement"/>
@@ -2688,6 +2783,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7452195">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7452195</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -2704,6 +2800,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7493241">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7493241</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -2711,6 +2808,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7484506">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7484506</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T21:30:00</j.3:datetime>
     <j.3:city>Miramas</j.3:city>
@@ -2718,6 +2816,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7134177">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7134177</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -2737,6 +2836,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7374281">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7374281</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -2744,6 +2844,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7301617">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7301617</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -2769,6 +2870,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7458533">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7458533</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-26T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -2792,6 +2894,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7529570">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7529570</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T21:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -2808,8 +2911,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/neoartist#name">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/neoartist#name"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/neoartist#name"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_292">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -2865,11 +2968,11 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
@@ -2917,6 +3020,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6502720">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6502720</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -2925,6 +3029,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7601183">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7601183</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T12:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -2944,6 +3049,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7030426">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7030426</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T19:00:00</j.3:datetime>
     <j.3:city>Muret</j.3:city>
@@ -2985,6 +3091,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7481726">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7481726</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:00:00</j.3:datetime>
     <j.3:city>Ivry-Sur-Seine</j.3:city>
@@ -3010,6 +3117,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7452196">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7452196</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3065,6 +3173,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7449428">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7449428</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T23:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -3102,6 +3211,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7426998">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7426998</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:30:00</j.3:datetime>
     <j.3:city>Tournefeuille</j.3:city>
@@ -3122,27 +3232,27 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_533">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -3152,6 +3262,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7509199">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7509199</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Solaize</j.3:city>
@@ -3170,6 +3281,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7498568">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7498568</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T23:30:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -3204,6 +3316,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7257263">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7257263</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -3273,6 +3386,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7582078">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7582078</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T23:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -3303,15 +3417,16 @@
     <j.1:code_arrondissement>9721</j.1:code_arrondissement>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7502350">
-    <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
-    <j.3:ticketStatus>available</j.3:ticketStatus>
-    <j.3:datetime>2014-01-25T21:00:00</j.3:datetime>
-    <j.3:city>Vitrolles</j.3:city>
     <j.3:participant>Airelle Besson</j.3:participant>
-    <j.3:participant>Céline Bonacina</j.3:participant>
-    <j.3:participant>Sylvaine Hélary</j.3:participant>
+    <j.3:city>Vitrolles</j.3:city>
     <j.3:participant>François Laizeau</j.3:participant>
+    <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:participant>Sylvaine Hélary</j.3:participant>
+    <j.3:datetime>2014-01-25T21:00:00</j.3:datetime>
     <j.3:participant>Didier Levallet</j.3:participant>
+    <j.3:eventId>7502350</j.3:eventId>
+    <j.3:participant>Céline Bonacina</j.3:participant>
+    <j.3:ticketStatus>available</j.3:ticketStatus>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_733">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -3321,6 +3436,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7238113">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7238113</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T12:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -3334,6 +3450,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7575866">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7575866</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3349,6 +3466,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7466715">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7466715</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3362,6 +3480,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7462396">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7462396</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Saint-Eloi</j.3:city>
@@ -3392,6 +3511,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7586360">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7586360</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T10:30:00</j.3:datetime>
     <j.3:city>Ecully</j.3:city>
@@ -3399,6 +3519,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7448073">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7448073</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T20:30:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -3406,6 +3527,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6907937">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6907937</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Vitrolles</j.3:city>
@@ -3419,6 +3541,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7409341">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7409341</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T21:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -3445,12 +3568,14 @@
     <j.3:participant>Blower</j.3:participant>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:participant>Drunksouls</j.3:participant>
+    <j.3:eventId>7448093</j.3:eventId>
     <j.3:participant>Festival des Massiliades</j.3:participant>
-    <j.3:participant>Drunksoul</j.3:participant>
     <j.3:participant>Juveniles</j.3:participant>
+    <j.3:participant>Drunksoul</j.3:participant>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7324569">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7324569</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3488,6 +3613,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6842278">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6842278</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3510,6 +3636,7 @@
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:participant>Eric Lelann</j.3:participant>
     <j.3:participant>Yves Torchinsky</j.3:participant>
+    <j.3:eventId>7413391</j.3:eventId>
     <j.3:city>Paris</j.3:city>
     <j.3:participant>Vincent Bourgeyx</j.3:participant>
     <j.3:participant>René Urtreger Trio</j.3:participant>
@@ -3552,6 +3679,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7525004">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7525004</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3591,18 +3719,20 @@
     <j.1:code_commune>03190</j.1:code_commune>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7448032">
-    <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:participant>Basic Soul Unit</j.3:participant>
     <j.3:ticketStatus>available</j.3:ticketStatus>
+    <j.3:participant>The Cosmic Adventure</j.3:participant>
     <j.3:datetime>2014-01-24T23:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
-    <j.3:participant>The Cosmic Adventure</j.3:participant>
-    <j.3:participant>Basic Soul Unit</j.3:participant>
-    <j.3:participant>Kosme</j.3:participant>
     <j.3:participant>Cosmic Adventure</j.3:participant>
     <j.3:participant>Move D</j.3:participant>
+    <j.3:participant>Kosme</j.3:participant>
+    <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7448032</j.3:eventId>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7519132">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7519132</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -3634,6 +3764,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7025345">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7025345</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T19:00:00</j.3:datetime>
     <j.3:city>Gleizé</j.3:city>
@@ -3667,6 +3798,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7180586">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7180586</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:30:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -3674,6 +3806,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7318863">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7318863</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -3724,6 +3857,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7545439">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7545439</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T21:00:00</j.3:datetime>
     <j.3:city>Venelles</j.3:city>
@@ -3732,6 +3866,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7381365">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7381365</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T21:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -3739,6 +3874,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7094642">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7094642</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-26T20:00:00</j.3:datetime>
     <j.3:city>Luynes</j.3:city>
@@ -3758,6 +3894,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6946373">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6946373</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -3789,6 +3926,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7448030">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7448030</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T23:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -3798,6 +3936,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6567502">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6567502</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3866,6 +4005,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6435601">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6435601</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -3896,6 +4036,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7486175">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7486175</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T12:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -3915,6 +4056,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7195731">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7195731</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Lyon - Villeurbanne Cedex</j.3:city>
@@ -3929,6 +4071,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7448007">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7448007</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3937,6 +4080,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7335952">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7335952</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3947,6 +4091,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7461990">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7461990</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -3961,6 +4106,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7452122">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7452122</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -4053,10 +4199,10 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
@@ -4069,6 +4215,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7488530">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7488530</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T21:15:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4076,6 +4223,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7273632">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7273632</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4083,8 +4231,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#hexBinary">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_04">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Departement"/>
@@ -4099,8 +4247,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_052">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -4134,6 +4282,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7552160">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7552160</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T00:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4141,6 +4290,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6493074">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6493074</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4198,6 +4348,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6818235">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6818235</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-26T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -4234,6 +4385,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7367268">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7367268</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -4243,6 +4395,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7522866">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7522866</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T23:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4296,8 +4449,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/code_arrondissement">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/code_arrondissement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_352">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -4313,6 +4466,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7411263">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7411263</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4379,10 +4533,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/mgoevent#7449434"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/mgoevent#7449434"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7449434"/>
@@ -4393,6 +4547,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7449434</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -4412,8 +4567,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#participant">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/mgoevent#participant"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/mgoevent#participant"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#OntologyProperty">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -4444,6 +4599,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7438028">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7438028</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T20:00:00</j.3:datetime>
     <j.3:city>Saint-Étienne</j.3:city>
@@ -4472,6 +4628,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6859807">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6859807</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T19:00:00</j.3:datetime>
     <j.3:city>Salvagnac</j.3:city>
@@ -4485,6 +4642,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6934352">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>6934352</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T20:30:00</j.3:datetime>
     <j.3:city>Sanary Sur Mer</j.3:city>
@@ -4498,6 +4656,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7428333">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7428333</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -4506,6 +4665,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7411260">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7411260</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -4513,8 +4673,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#negativeInteger">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_90010">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -4530,27 +4690,27 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#duration">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_53130">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -4576,6 +4736,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7575867">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7575867</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:30:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4661,8 +4822,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_973">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Departement"/>
@@ -4681,6 +4842,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7500771">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7500771</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -4754,6 +4916,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7390372">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7390372</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4761,6 +4924,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7157853">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7157853</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-28T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -4787,6 +4951,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7360381">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7360381</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T19:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -4805,6 +4970,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7484663">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7484663</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -4896,6 +5062,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7602344">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7602344</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T22:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -4909,6 +5076,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7525446">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7525446</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Bourgoin-Jallieu</j.3:city>
@@ -4916,6 +5084,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7334739">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7334739</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T16:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -4947,8 +5116,8 @@
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#annotation_comment">
     <rdfs:label>annotation comment</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#annotation_comment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_9742">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -4964,6 +5133,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7536658">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7536658</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -4971,6 +5141,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7556164">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7556164</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -4984,6 +5155,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7234749">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7234749</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -4997,6 +5169,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7428013">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7428013</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T21:00:00</j.3:datetime>
     <j.3:city>Ollioules</j.3:city>
@@ -5035,6 +5208,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7309971">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7309971</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T19:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -5088,6 +5262,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7467334">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7467334</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T19:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -5102,6 +5277,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7457501">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7457501</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-03T09:30:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -5111,10 +5287,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/mgoevent#7176755"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/d2rqevent#7176755"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/d2rqevent#7176755"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/mgoevent#7176755"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7176755"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7176755"/>
@@ -5125,6 +5301,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7176755</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:30:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -5168,6 +5345,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7115483">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7115483</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Muret</j.3:city>
@@ -5261,6 +5439,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7551971">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7551971</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-02T21:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -5300,6 +5479,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7467673">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7467673</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Noisy Le Sec</j.3:city>
@@ -5441,6 +5621,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7489560">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7489560</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -5521,6 +5702,7 @@
     <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7449434"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7449434</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -5563,6 +5745,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7476021">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7476021</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -5615,6 +5798,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7229371">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7229371</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T19:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -5652,24 +5836,24 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_624">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -5679,6 +5863,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7482750">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7482750</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T23:59:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -5732,6 +5917,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7549836">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7549836</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T19:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -5761,6 +5947,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7406710">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7406710</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T23:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -5770,25 +5957,25 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#event_name">
     <rdfs:label>event name</rdfs:label>
@@ -5807,8 +5994,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#datetime">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/mgoevent#datetime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_25056">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -5833,25 +6020,25 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
   </rdf:Description>
@@ -5863,6 +6050,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7177461">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7177461</j.3:eventId>
     <j.3:participant>Nout_Heretik</j.3:participant>
     <j.3:participant>The Sickest Squad</j.3:participant>
     <j.3:participant>The Speed Freak</j.3:participant>
@@ -5881,6 +6069,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7384692">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7384692</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-29T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -5889,6 +6078,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7383662">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7383662</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:30:00</j.3:datetime>
     <j.3:city>Saint-Étienne</j.3:city>
@@ -5903,8 +6093,8 @@
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
@@ -5949,6 +6139,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7590582">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7590582</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T19:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -5956,6 +6147,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7157637">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7157637</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-02-02T18:00:00</j.3:datetime>
     <j.3:city>Ramonville</j.3:city>
@@ -5980,10 +6172,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/mgoevent#7433536"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/mgoevent#7433536"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7433536"/>
@@ -5994,6 +6186,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7433536</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T20:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -6018,6 +6211,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7558057">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7558057</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T21:00:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -6060,6 +6254,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7311980">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7311980</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T22:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -6094,6 +6289,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7388422">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7388422</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -6141,8 +6337,8 @@
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#base64Binary">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
@@ -6157,6 +6353,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7556113">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7556113</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-02-01T19:00:00</j.3:datetime>
     <j.3:city>Saint-Cyr-Sur-Mer</j.3:city>
@@ -6176,6 +6373,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7488529">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7488529</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T21:15:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -6219,8 +6417,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveInteger">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -6275,6 +6473,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7502915">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7502915</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T19:00:00</j.3:datetime>
     <j.3:city>CabriÈs</j.3:city>
@@ -6310,6 +6509,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7524663">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7524663</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-31T20:00:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -6330,8 +6530,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gMonth">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#differentFrom">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
@@ -6348,6 +6548,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7590581">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7590581</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-24T19:30:00</j.3:datetime>
     <j.3:city>Marseille</j.3:city>
@@ -6367,6 +6568,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7334735">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7334735</j.3:eventId>
     <j.3:ticketStatus>available</j.3:ticketStatus>
     <j.3:datetime>2014-01-30T12:30:00</j.3:datetime>
     <j.3:city>Toulouse</j.3:city>
@@ -6386,6 +6588,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7518341">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7518341</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-25T19:00:00</j.3:datetime>
     <j.3:city>Lyon</j.3:city>
@@ -6393,6 +6596,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7583391">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7583391</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T18:30:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -6435,6 +6639,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7583390">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    <j.3:eventId>7583390</j.3:eventId>
     <j.3:ticketStatus>unavailable</j.3:ticketStatus>
     <j.3:datetime>2014-01-23T20:00:00</j.3:datetime>
     <j.3:city>Paris</j.3:city>
@@ -6444,24 +6649,24 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_392">

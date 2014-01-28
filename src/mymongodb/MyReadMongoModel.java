@@ -54,7 +54,7 @@ public class MyReadMongoModel {
 				m.add(musicEvent, RDF.type, Event);
 				
 				
-				//m.add(musicEvent, property_eventId, str_id);
+				m.add(musicEvent, property_eventId, str_id);
 				m.add(musicEvent, property_ticketStatus, str_ticket_status);
 				m.add(musicEvent, property_datetime, str_datetime);
 				m.add(musicEvent, property_city, str_city);

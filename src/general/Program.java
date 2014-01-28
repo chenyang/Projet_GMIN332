@@ -77,6 +77,8 @@ public class Program {
 		
 		//Combination des models
 		Model model_mapping = prog.getMappingModel("assets/mapping_d2rq_mongo.rdf");
+		Model modelAllOrigin = tdbModel.union(d2rqModel).union(mongoModel).union(neomodel);
+		
 		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel).union(neomodel).union(model_mapping);
 		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
 		InfModel im = ModelFactory.createInfModel(reasoner, modelAll);
@@ -88,7 +90,11 @@ public class Program {
 		 */
 		
 		//Requette D2RQ
-		prog.executeRequette(im, 1);
+		//prog.executeRequette(im, 1);
+		//prog.executeRequette(modelAllOrigin,2);
+		//prog.executeRequette(modelAllOrigin,3);
+		//prog.executeRequette(modelAllOrigin, 4);
+		//prog.executeRequette(modelAllOrigin, 5);
 		
 	}
 
