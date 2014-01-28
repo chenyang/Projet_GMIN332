@@ -12,11 +12,12 @@ public class QueryStringFactory {
 		}else if(num==1){
 			//user qui ont annote un evenement avec datetime inferieur 2014-01-24, city
 			result+=Outil.createPrefixe();
-			result+="SELECT ?nom_user ?commentaire ?status ?event_id ?datetime ?city"+NL+
+			result+="SELECT DISTINCT ?event_name ?city ?status ?nom_user ?commentaire"+NL+
 					"WHERE"+NL+
 					"{"+NL+ 
+					
 					"?user rdf:type d2rqevent:user."+NL+
-					"?event rdf:type d2rqevent:event."+NL+
+					"?event rdf:type mgoevent:event."+NL+
 					"?annotation rdf:type d2rqevent:annotation."+NL+
 					"?user d2rqevent:user_username ?nom_user."+NL+
 					"?annotation d2rqevent:annotation_ref_user ?user."+NL+
@@ -24,12 +25,12 @@ public class QueryStringFactory {
 					"?annotation d2rqevent:annotation_comment ?commentaire."+NL+
 					"?event d2rqevent:event_name ?event_name."+NL+
 
-					"?event_mongo rdf:type mgoevent:event."+NL+
-					"?event_mongo mgoevent:city ?city."+NL+
-					"?event_mongo mgoevent:ticketStatus ?status."+NL+
-					"?event_mongo mgoevent:eventId ?event_id."+NL+
-					"?event_mongo mgoevent:datetime ?datetime."+NL+
-					"FILTER(?event_id=?event_name&&?datetime<='2014-01-24')"+NL+
+					"?event mgoevent:city ?city."+NL+
+					"?event mgoevent:ticketStatus ?status."+NL+
+					"?event mgoevent:datetime ?datetime."+NL+
+					"FILTER(?datetime<='2014-01-28')"+NL+
+					
+					
 					"}";
 
 

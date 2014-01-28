@@ -17,6 +17,8 @@ import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.reasoner.Reasoner;
+import com.hp.hpl.jena.reasoner.ReasonerRegistry;
 import com.hp.hpl.jena.util.FileManager;
 
 public class Program {
@@ -76,7 +78,10 @@ public class Program {
 		//Combination des models
 		Model model_mapping = prog.getMappingModel("assets/mapping_d2rq_mongo.rdf");
 		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel).union(neomodel).union(model_mapping);
-		InfModel im = ModelFactory.createRDFSModel(modelAll);
+		Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
+		InfModel im = ModelFactory.createInfModel(reasoner, modelAll);
+		Outil.persistModel(im, "assets/All.rdf");
+		
 		
 		/**
 		 * Les Requettes

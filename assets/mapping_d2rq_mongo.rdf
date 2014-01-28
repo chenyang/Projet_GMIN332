@@ -4,10 +4,24 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:mgoevent="http://www.findevent.fr/mgoevent#"
-     xmlns:d2rq="http://www.findevent.fr/d2rq#">
-  
-    <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#event">
-        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+     xmlns:d2rqevent="http://www.findevent.fr/d2rqevent#">
+
+	<owl:Class rdf:about="http://www.findevent.fr/d2rqevent#7433536">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7433536"/>
     </owl:Class>  
+    
+    <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#7449434">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7449434"/>
+    </owl:Class>  
+    
+     <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#6815491">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#6815491"/>
+    </owl:Class>  
+    
+     <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#7176755">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7176755"/>
+    </owl:Class> 
+    
+    
     
 </rdf:RDF>

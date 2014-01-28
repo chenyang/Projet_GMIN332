@@ -5,3 +5,23 @@ mongoimport --db mydb --collection music_event --file /home/cgao/Travail/Projet_
 
 Start the server with bin/neo4j start from a terminal.
 Open http://localhost:7474 for the Web UI.
+
+
+
+
+
+ <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#7433536">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7433536"/>
+    </owl:Class>  
+    
+    <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#7449434">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7449434"/>
+    </owl:Class>  
+    
+     <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#6815491">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#6815491"/>
+    </owl:Class>  
+    
+     <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#7176755">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#7176755"/>
+    </owl:Class> 

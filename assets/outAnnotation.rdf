@@ -8,7 +8,7 @@
     xmlns:map="file:///home/cgao/Travail/Projet_GMIN332/assets/fm.n3#" > 
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#8">
     <d2rqevent:annotation_ref_user rdf:resource="http://www.findevent.fr/d2rqevent#2"/>
-    <d2rqevent:annotation_ref_event rdf:resource="http://www.findevent.fr/d2rqevent#1"/>
+    <d2rqevent:annotation_ref_event rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
     <d2rqevent:annotation_date>2014-01-24</d2rqevent:annotation_date>
     <rdfs:label>event #8</rdfs:label>
     <d2rqevent:annotation_comment>C'est trop ennuyant !!</d2rqevent:annotation_comment>
@@ -40,6 +40,12 @@
     <rdfs:label>user email</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#7449434">
+    <d2rqevent:event_name>7449434</d2rqevent:event_name>
+    <d2rqevent:event_location>Paris</d2rqevent:event_location>
+    <rdfs:label>event #2</rdfs:label>
+    <rdf:type rdf:resource="http://www.findevent.fr/d2rqevent#event"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#event_name">
     <rdfs:label>event name</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -55,6 +61,16 @@
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#6815491">
+    <d2rqevent:event_name>6815491</d2rqevent:event_name>
+    <d2rqevent:event_location>Toulouse</d2rqevent:event_location>
+    <rdfs:label>event #3</rdfs:label>
+    <rdf:type rdf:resource="http://www.findevent.fr/d2rqevent#event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#annotation_comment">
+    <rdfs:label>annotation comment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#4">
     <d2rqevent:user_email>yves@gmail.com</d2rqevent:user_email>
     <rdfs:label>event #4</rdfs:label>
@@ -62,13 +78,9 @@
     <d2rqevent:user_location>Lyon</d2rqevent:user_location>
     <rdf:type rdf:resource="http://www.findevent.fr/d2rqevent#user"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#annotation_comment">
-    <rdfs:label>annotation comment</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#10">
     <d2rqevent:annotation_ref_user rdf:resource="http://www.findevent.fr/d2rqevent#3"/>
-    <d2rqevent:annotation_ref_event rdf:resource="http://www.findevent.fr/d2rqevent#2"/>
+    <d2rqevent:annotation_ref_event rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
     <d2rqevent:annotation_date>2014-01-25</d2rqevent:annotation_date>
     <rdfs:label>event #10</rdfs:label>
     <d2rqevent:annotation_comment>les chanteurs sont sympas!</d2rqevent:annotation_comment>
@@ -93,28 +105,26 @@
     <rdfs:label>event</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#2">
-    <d2rqevent:event_name>7449434</d2rqevent:event_name>
+  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#7433536">
+    <d2rqevent:event_name>7433536</d2rqevent:event_name>
     <d2rqevent:event_location>Paris</d2rqevent:event_location>
-    <rdfs:label>event #2</rdfs:label>
+    <rdfs:label>event #1</rdfs:label>
     <rdf:type rdf:resource="http://www.findevent.fr/d2rqevent#event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#annotation">
+    <rdfs:label>annotation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#2">
     <d2rqevent:user_email>yassine@gmail.com</d2rqevent:user_email>
     <rdfs:label>event #2</rdfs:label>
     <d2rqevent:user_username>yassine</d2rqevent:user_username>
     <d2rqevent:user_location>Montpellier</d2rqevent:user_location>
     <rdf:type rdf:resource="http://www.findevent.fr/d2rqevent#user"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#annotation">
-    <rdfs:label>annotation</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#1">
     <d2rqevent:annotation_ref_user rdf:resource="http://www.findevent.fr/d2rqevent#1"/>
-    <d2rqevent:annotation_ref_event rdf:resource="http://www.findevent.fr/d2rqevent#1"/>
-    <d2rqevent:event_name>7433536</d2rqevent:event_name>
-    <d2rqevent:event_location>Paris</d2rqevent:event_location>
-    <rdfs:label>event #1</rdfs:label>
-    <rdf:type rdf:resource="http://www.findevent.fr/d2rqevent#event"/>
+    <d2rqevent:annotation_ref_event rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
     <d2rqevent:annotation_date>2014-01-24</d2rqevent:annotation_date>
     <rdfs:label>event #1</rdfs:label>
     <d2rqevent:annotation_comment>J'aimerai bien y aller, mais c'est trop loin pour les gens non motorisés</d2rqevent:annotation_comment>
@@ -127,11 +137,17 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#9">
     <d2rqevent:annotation_ref_user rdf:resource="http://www.findevent.fr/d2rqevent#1"/>
-    <d2rqevent:annotation_ref_event rdf:resource="http://www.findevent.fr/d2rqevent#2"/>
+    <d2rqevent:annotation_ref_event rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
     <d2rqevent:annotation_date>2014-01-24</d2rqevent:annotation_date>
     <rdfs:label>event #9</rdfs:label>
     <d2rqevent:annotation_comment>Il se trouve trop loin</d2rqevent:annotation_comment>
     <rdf:type rdf:resource="http://www.findevent.fr/d2rqevent#annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#7176755">
+    <d2rqevent:event_name>7176755</d2rqevent:event_name>
+    <d2rqevent:event_location>Lyon</d2rqevent:event_location>
+    <rdfs:label>event #4</rdfs:label>
+    <rdf:type rdf:resource="http://www.findevent.fr/d2rqevent#event"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#event_location">
     <rdfs:label>event location</rdfs:label>
