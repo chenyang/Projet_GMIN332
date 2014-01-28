@@ -31,6 +31,7 @@ public class MyReadMongoModel {
 		Property property_datetime = m.createProperty(ns+"datetime");
 		Property property_city = m.createProperty(ns+"city");
 		Property property_participant = m.createProperty(ns+"participant");
+		
 
 		//Alimentation with database data
 		try {

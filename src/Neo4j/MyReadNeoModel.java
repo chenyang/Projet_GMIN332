@@ -33,10 +33,13 @@ public class MyReadNeoModel {
 		String ns = "http://www.findevent.fr/neoartist#";
 		m.setNsPrefix("neoartist", ns);
 		Resource Artist = m.createResource(ns+"artist");
+		Resource Wife = m.createResource(ns+"wife");
 		Property property_name= m.createProperty(ns+"name");
 		Property property_instrument = m.createProperty(ns+"instrument");
 		Property property_genre = m.createProperty(ns+"genre");
 		Property property_knows = m.createProperty(ns+"knows");
+		Property property_marries = m.createProperty(ns+"marries");
+		Property property_nationality = m.createProperty(ns+"nationality");//For wife's nationality
 		Property property_knows_weight = m.createProperty(ns+"knows_weight");
 
 
@@ -45,27 +48,41 @@ public class MyReadNeoModel {
 		try{
 			for(Node n : graphDatabaseService.getAllNodes()){
 				//System.out.println(n.getProperty("name")+", "+n.getProperty("genre")+", "+n.getProperty("instrument"));
-				String name_underscore = (n.getProperty("name").toString()).replace(" ", "_");
-				Resource artist = m.createResource(ns+name_underscore);
-				m.add(artist, RDF.type, Artist);
-				m.add(artist, property_name, n.getProperty("name").toString());
-				m.add(artist, property_genre, n.getProperty("genre").toString());
-				m.add(artist, property_instrument, n.getProperty("instrument").toString());
-				
-				if(n.hasRelationship()){
-					//For all outgoing relationships
-					for(Relationship rel:n.getRelationships(Direction.OUTGOING)){
-						//System.out.println("OUTGOING:"+n.getProperty("name")+" knows: "+rel.getEndNode().getProperty("name").toString()+"/ "+ rel.getProperty("knows-weight"));
-						name_underscore = (rel.getEndNode().getProperty("name").toString()).replace(" ", "_");
-                        Resource anotherArtist = m.createResource(ns+name_underscore);
-						
-						//property_knows.addProperty(property_knows_weight, rel.getProperty("knows-weight").toString());
-						m.add(artist, property_knows, anotherArtist);
-						//m.add(anotherArtist, property_knows_weight, rel.getProperty("knows-weight").toString());
-					}				
+
+				//For all Node Artist	
+				if(n.getProperty("genre")!=null){
+					String name_underscore = (n.getProperty("name").toString()).replace(" ", "_");
+					Resource artist = m.createResource(ns+name_underscore);
+					m.add(artist, RDF.type, Artist);
+					m.add(artist, property_name, n.getProperty("name").toString());
+					m.add(artist, property_genre, n.getProperty("genre").toString());
+					m.add(artist, property_instrument, n.getProperty("instrument").toString());
+
+					if(n.hasRelationship()){
+						//For all outgoing relationships
+						for(Relationship rel:n.getRelationships(Direction.OUTGOING)){
+							if(rel.getType().name().equals(NeoDBManagement.RelTypes.KNOWS.toString())){
+								//System.out.println("OUTGOING:"+n.getProperty("name")+" knows: "+rel.getEndNode().getProperty("name").toString()+"/ "+ rel.getProperty("knows-weight"));
+								String another_name_underscore = (rel.getEndNode().getProperty("name").toString()).replace(" ", "_");
+								Resource anotherArtist = m.createResource(ns+another_name_underscore);
+								//property_knows.addProperty(property_knows_weight, rel.getProperty("knows-weight").toString());
+								m.add(artist, property_knows, anotherArtist);
+								//m.add(anotherArtist, property_knows_weight, rel.getProperty("knows-weight").toString());
+							}else if(rel.getType().name().equals(NeoDBManagement.RelTypes.MARRYTO.toString())){
+								Resource wife = m.createResource(ns+rel.getEndNode().getProperty("name"));
+								m.add(wife, RDF.type, Wife);
+								m.add(wife, property_name, rel.getEndNode().getProperty("name").toString());
+								m.add(wife, property_nationality,rel.getEndNode().getProperty("nationality").toString());
+								m.add(artist, property_marries, wife);
+							}
+						}				
+					}
 				}
 			}
 			transaction.success();
+		}catch(Exception e){
+			//do nothing, e.printStackTrace();
+			System.out.println("some node just dont have properties, we will jump over them");
 		}finally{
 			transaction.finish();
 			neomgt.shutdown();
@@ -90,15 +107,16 @@ public class MyReadNeoModel {
 		sSelect="SELECT DISTINCT * ";
 		sQueries=sQueries+sSelect;	
 		sWhere = "";
-		sWhere=sWhere + "?artiste a dbpedia-owl:Artist.";
-		sWhere=sWhere + "?artiste foaf:name ?name.";
-		sWhere=sWhere + "?artiste dbpedia-owl:genre ?genre."; 
-		sWhere=sWhere + "?artiste dbpedia-owl:genre ?genre."; 
-		sWhere=sWhere + "?artiste dbpedia-owl:instrument ?instrument.";
-		sQueries = sQueries+ "WHERE { "+sWhere+" } ";
-		qexec = QueryExecutionFactory.sparqlService(service_dbpedia, sQueries);
+		sWhere=sWhere + "?artiste a dbpedia-owl:Artist. ";
+		sWhere=sWhere + "?artiste foaf:name ?name. ";
+		sWhere=sWhere + "?artiste dbpedia-owl:instrument ?instrument. ";
+		sWhere=sWhere + "?artiste dbpedia-owl:genre ?genre. "; 
+		sQueries = sQueries+ "WHERE {"+sWhere+"} ";
+		//System.out.println(sQueries);
 		try {
 			wr_nettoye = new PrintWriter("assets/info_artistes_dbpedia.txt", "UTF-8");
+			/*
+			qexec = QueryExecutionFactory.sparqlService(service_dbpedia, sQueries);
 			ResultSet rs = qexec.execSelect() ;
 			while(rs.hasNext())
 			{
@@ -115,6 +133,7 @@ public class MyReadNeoModel {
 						+", "+Outil.getLastItemInLink(soln.get("?instrument").toString())
 						);
 			}
+			 */			
 
 			//Manually add some artists
 			Artist a1 = new Artist();
@@ -154,7 +173,7 @@ public class MyReadNeoModel {
 	public void createDB(){
 		NeoDBManagement neomgt = new NeoDBManagement();
 		try{
-			//neomgt.createDatabase(this.readDataArtiste());
+			neomgt.createDatabase(this.readDataArtiste());
 			//neomgt.removeData();
 			neomgt.shutdown();
 

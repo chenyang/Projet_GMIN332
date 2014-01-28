@@ -1,0 +1,13 @@
+<rdf:RDF
+     xmlns:ns="http://www.gmin332.org/ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:mgoevent="http://www.findevent.fr/mgoevent#"
+     xmlns:d2rq="http://www.findevent.fr/d2rq#">
+  
+    <owl:Class rdf:about="http://www.findevent.fr/d2rqevent#event">
+        <owl:sameAs rdf:resource="http://www.findevent.fr/mgoevent#event"/>
+    </owl:Class>  
+    
+</rdf:RDF>

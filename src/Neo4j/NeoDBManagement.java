@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.neo4j.graphdb.Direction;
 import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.graphdb.Label;
 import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.RelationshipType;
@@ -23,7 +24,7 @@ public class NeoDBManagement {
 	private ArrayList<Node> listOfWifes = new ArrayList<Node>();
 
 	//list of relationships
-	private static enum RelTypes implements RelationshipType{
+	public static enum RelTypes implements RelationshipType{
 		KNOWS, 
 		MARRYTO
 	}
@@ -36,7 +37,7 @@ public class NeoDBManagement {
 	@SuppressWarnings("deprecation")
 	void createDatabase(ArrayList<Artist> listOfArtists){
 
-		//System.out.println(listOfArtists.size());
+		System.out.println("num of list of Artists: "+listOfArtists.size());
 		
 		//Begin Transaction
 		Transaction transaction = graphDatabaseService.beginTx();
@@ -82,10 +83,24 @@ public class NeoDBManagement {
 				Relationship r_d_v = (node_didier).createRelationshipTo(node_vioda, RelTypes.KNOWS);
 				r_d_v.setProperty("knows-weight", 6);
 				
-				Relationship r_v_d = (node_vioda).createRelationshipTo(node_didier, RelTypes.KNOWS);
+				Relationship r_v_d = node_vioda.createRelationshipTo(node_didier, RelTypes.KNOWS);
 				r_v_d.setProperty("knows-weight", 3);
-				Relationship r_v_f = (node_vioda).createRelationshipTo(node_florian, RelTypes.KNOWS);
+				Relationship r_v_f = node_vioda.createRelationshipTo(node_florian, RelTypes.KNOWS);
 				r_v_f.setProperty("knows-weight", 9);
+				
+				
+				
+				//add relationships of Wifes
+				Node wife1 = graphDatabaseService.createNode();
+				wife1.setProperty("name", "Florence");
+				wife1.setProperty("nationality", "French");
+				
+				Node wife2 = graphDatabaseService.createNode();
+				wife2.setProperty("name", "Alice");
+				wife2.setProperty("nationality", "English");
+			
+				Relationship r_wf_1 = node_maxime.createRelationshipTo(wife1, RelTypes.MARRYTO);
+				Relationship r_wf_2 = node_florian.createRelationshipTo(wife2, RelTypes.MARRYTO);
 			}
 			
 			//success transaction

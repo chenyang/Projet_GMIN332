@@ -17,13 +17,22 @@ import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.InfModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.util.FileManager;
 
 public class Program {
+	
+	private Model getMappingModel(String file_path){
+		Model m = ModelFactory.createDefaultModel();
+		FileManager.get().readModel( m, file_path);
+		return m;
+	}
+	
+	
 	private void executeRequette(Model m, int num){
 		String queryString = QueryStringFactory.createQueryString(num);
 		Query query = QueryFactory.create(queryString) ;
 		//Show requette
-		query.serialize(new IndentedWriter(System.out,true)) ;
+		query.serialize(new IndentedWriter(System.out,true));
 		System.out.println() ;
 		QueryExecution qexec = QueryExecutionFactory.create(query, m) ;
 		System.out.println("Elements of the model.. ") ;
@@ -45,37 +54,36 @@ public class Program {
 		//Load TDB Model
 		MyReadTDBModel mytdb = new MyReadTDBModel();
 		Model tdbModel = mytdb.getTDBModel();
-		//Outil.persistModel(tdbModel, "assets/outTDB.rdf");
+		Outil.persistModel(tdbModel, "assets/outTDB.rdf");
 		
 		
 		//Load D2RQ Model
 		MyReadD2RQModel myd2rq = new MyReadD2RQModel();
 		Model d2rqModel = myd2rq.getD2RQModel();
-		//Outil.persistModel(d2rqModel, "assets/outAnnotation.rdf");
+		Outil.persistModel(d2rqModel, "assets/outAnnotation.rdf");
 		
 		//Load MongoDB Model
 		MyReadMongoModel mymongo = new MyReadMongoModel();
 		Model mongoModel = mymongo.getModelWithDatabaseData();
-		//Outil.persistModel(mongoModel, "assets/outMongoEvent.rdf");
+		Outil.persistModel(mongoModel, "assets/outMongoEvent.rdf");
 		
 		//Load Neo4j
 		MyReadNeoModel myneo = new MyReadNeoModel();
-		//myneo.createDB();
+		myneo.createDB();
 		Model neomodel = myneo.getNeoModelWithData();
-		//Outil.persistModel(neomodel, "assets/outNeo.rdf");
+		Outil.persistModel(neomodel, "assets/outNeo.rdf");
 		
 		//Combination des models
-		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel).union(neomodel);
-		//InfModel im = ModelFactory.createRDFSModel(modelAll);
-		
+		Model model_mapping = prog.getMappingModel("assets/mapping_d2rq_mongo.rdf");
+		Model modelAll = tdbModel.union(d2rqModel).union(mongoModel).union(neomodel).union(model_mapping);
+		InfModel im = ModelFactory.createRDFSModel(modelAll);
 		
 		/**
 		 * Les Requettes
 		 */
 		
 		//Requette D2RQ
-		prog.executeRequette(modelAll, 3);
-		//prog.executeRequette(modelAll, 99);
+		prog.executeRequette(im, 5);
 		
 	}
 
