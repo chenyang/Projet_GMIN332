@@ -69,7 +69,7 @@ public class Program {
 		
 		//Load Neo4j
 		MyReadNeoModel myneo = new MyReadNeoModel();
-		myneo.createDB();
+		//myneo.createDB();
 		Model neomodel = myneo.getNeoModelWithData();
 		Outil.persistModel(neomodel, "assets/outNeo.rdf");
 		
@@ -83,7 +83,7 @@ public class Program {
 		 */
 		
 		//Requette D2RQ
-		prog.executeRequette(im, 5);
+		prog.executeRequette(im, 1);
 		
 	}
 

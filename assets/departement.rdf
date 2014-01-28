@@ -14,7 +14,7 @@
 
 	<geo:Departement rdf:about="DEP_01">
 		<geo:code_departement>01</geo:code_departement>
-		<geo:nom >Ain</geo:nom>
+		<geo:nom>Ain</geo:nom>
 		<geo:chef-lieu>
 		<geo:Commune rdf:about="COM_01053">
 		<geo:code_commune>01053</geo:code_commune>

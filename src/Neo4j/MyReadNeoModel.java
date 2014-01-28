@@ -115,7 +115,7 @@ public class MyReadNeoModel {
 		//System.out.println(sQueries);
 		try {
 			wr_nettoye = new PrintWriter("assets/info_artistes_dbpedia.txt", "UTF-8");
-			/*
+			
 			qexec = QueryExecutionFactory.sparqlService(service_dbpedia, sQueries);
 			ResultSet rs = qexec.execSelect() ;
 			while(rs.hasNext())
@@ -133,7 +133,7 @@ public class MyReadNeoModel {
 						+", "+Outil.getLastItemInLink(soln.get("?instrument").toString())
 						);
 			}
-			 */			
+			 			
 
 			//Manually add some artists
 			Artist a1 = new Artist();
@@ -162,7 +162,8 @@ public class MyReadNeoModel {
 			listOfArtist.add(a4);
 
 		}catch(Exception e){
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println("Dbpedia service has encountered some problems, will use predefined artists");
 		}finally{
 			wr_nettoye.close();
 			return listOfArtist;
