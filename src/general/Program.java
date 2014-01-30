@@ -31,7 +31,7 @@ public class Program {
 	
 	
 	private void executeRequette(Model m, int num){
-		String queryString = QueryStringFactory.createQueryString(num);
+		String queryString = QueryStringGenerator.createQueryString(num);
 		Query query = QueryFactory.create(queryString) ;
 		//Show requette
 		query.serialize(new IndentedWriter(System.out,true));
@@ -89,12 +89,20 @@ public class Program {
 		 * Les Requettes
 		 */
 		
-		//Requette D2RQ
+		/**D2rq et Mongodb**/
 		//prog.executeRequette(im, 1);
+
+		/**Neo4j et Mongodb**/
 		//prog.executeRequette(modelAllOrigin,2);
+		
+		/**Neo4j**/
 		//prog.executeRequette(modelAllOrigin,3);
+		
+		/**"D2rq et Mongo et TDB**/
 		//prog.executeRequette(modelAllOrigin, 4);
-		//prog.executeRequette(modelAllOrigin, 5);
+		
+		/**TDB et Mongo**/
+		prog.executeRequette(modelAllOrigin, 5);
 		
 	}
 

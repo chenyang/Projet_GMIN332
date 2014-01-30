@@ -284,13 +284,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_52121">
@@ -370,8 +370,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/subdivision">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/subdivision"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/subdivision"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_822">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -562,8 +562,8 @@
     <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#oneOf"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#oneOf"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_41018">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -869,8 +869,8 @@
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#annotation_ref_user">
     <rdfs:label>annotation ref user</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#annotation_ref_user"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -965,13 +965,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#6440167">
@@ -1215,14 +1215,14 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7496407">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
@@ -1234,8 +1234,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/code_commune">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/code_commune"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_043">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -1253,13 +1253,13 @@
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_022">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -1397,8 +1397,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#ticketStatus">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/mgoevent#ticketStatus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_15">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Departement"/>
@@ -1517,13 +1517,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_383">
@@ -1575,8 +1575,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_676">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -1635,9 +1635,9 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/d2rqevent#6815491"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/mgoevent#6815491"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/mgoevent#6815491"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/d2rqevent#6815491"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#6815491"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1742,12 +1742,12 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
   </rdf:Description>
@@ -1842,8 +1842,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7514817">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
@@ -2003,13 +2003,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_80">
@@ -2163,8 +2163,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_653">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -2174,27 +2174,27 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_44109">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -2239,8 +2239,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_673">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -2630,13 +2630,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_04070">
@@ -2911,8 +2911,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/neoartist#name">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/neoartist#name"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_292">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -2933,13 +2933,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_322">
@@ -2968,11 +2968,11 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
@@ -3234,24 +3234,24 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_533">
@@ -3500,8 +3500,8 @@
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#user_location">
     <rdfs:label>user location</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#user_location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_9722">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -3709,8 +3709,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_03190">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -3841,8 +3841,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/code_departement">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/code_departement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/neoartist#knows">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -4198,13 +4198,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_013">
@@ -4247,8 +4247,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_052">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -4449,8 +4449,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/code_arrondissement">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/code_arrondissement"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://rdf.insee.fr/geo/code_arrondissement"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_352">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -4533,9 +4533,9 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/mgoevent#7449434"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/mgoevent#7449434"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7449434"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -4692,23 +4692,23 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
   </rdf:Description>
@@ -4822,8 +4822,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/DEP_973">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Departement"/>
@@ -5019,8 +5019,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/neoartist#genre">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/neoartist#genre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
     <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -5287,9 +5287,9 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/mgoevent#7176755"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/d2rqevent#7176755"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/d2rqevent#7176755"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/mgoevent#7176755"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7176755"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -5833,27 +5833,27 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_624">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -5957,17 +5957,16 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
@@ -5976,12 +5975,13 @@
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#event_name">
     <rdfs:label>event name</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#event_name"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#event_name"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith">
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -6023,14 +6023,15 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
@@ -6038,7 +6039,6 @@
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
   </rdf:Description>
@@ -6172,9 +6172,9 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/mgoevent#7433536"/>
     <rdfs:subClassOf rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
     <owl:equivalentClass rdf:resource="http://www.findevent.fr/mgoevent#7433536"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <owl:sameAs rdf:resource="http://www.findevent.fr/d2rqevent#7433536"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -6342,8 +6342,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#base64Binary">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_191">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -6419,6 +6419,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -6426,7 +6427,6 @@
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_084">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -6468,8 +6468,8 @@
   <rdf:Description rdf:about="http://www.findevent.fr/d2rqevent#user_username">
     <rdfs:label>user username</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#user_username"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.findevent.fr/d2rqevent#user_username"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.findevent.fr/mgoevent#7502915">
     <rdf:type rdf:resource="http://www.findevent.fr/mgoevent#event"/>
@@ -6530,15 +6530,15 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gMonth">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#differentFrom">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#differentFrom"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#differentFrom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/COM_45234">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Commune"/>
@@ -6604,8 +6604,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gDay">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_841">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
@@ -6650,24 +6650,24 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.insee.fr/geo/2011/ARR_392">
     <rdf:type rdf:resource="http://rdf.insee.fr/geo/Arrondissement"/>
